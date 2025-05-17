@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\programming\GitHub\GenBench\GenBench\hyena-dna\evals\test_deepsea_promoter.py", line 9, in <module>
+    from src.models.sequence.deepsea import DeepSEA
+ModuleNotFoundError: No module named 'src.models'

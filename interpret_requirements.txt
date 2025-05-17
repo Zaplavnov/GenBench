@@ -1,0 +1,9 @@
+torch
+captum
+biopython
+hydra-core
+transformers
+einops
+matplotlib
+omegaconf
+pyfaidx 

@@ -1,0 +1,23 @@
+# Configuration for model interpretation module
+
+# Attribution method: 'saliency', 'ig' (Integrated Gradients), or 'dl' (DeepLift)
+attribution_method: ig
+
+# Number of samples to interpret
+num_samples: 10
+
+# Target class for attribution
+target_class: 0
+
+# JASPAR motif ID to correlate attributions with (optional)
+# Examples: 'MA0108.1' for TATA box
+motif_id: null
+
+# Path to model checkpoint
+ckpt_path: ${train.pretrained_model_path}
+
+# Directory to save interpretation results
+output_dir: interpret_results
+
+# One-hot encoding options
+include_n: true  # Whether to include N as a separate channel in one-hot encoding 

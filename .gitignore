@@ -77,6 +77,3 @@ coverage.xml
 
 # Project specific
 data/
-# Uncomment below if you want to use DVC for data versioning
-# !data/.gitkeep
-# !data/*.dvc 

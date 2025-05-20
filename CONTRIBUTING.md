@@ -80,4 +80,4 @@
 - Zicheng Liu (liuzicheng@westlake.edu.cn)
 - Lei Xin (9201310419@stu.njau.edu.cn)
 
-Спасибо за ваш вклад в проект GenBench! 
+Спасибо за ваш вклад в проект GenBench!

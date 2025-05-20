@@ -1,5 +1,8 @@
+# HyenaDNA
 
+Компонент для работы с ДНК-последовательностями.
 
+Это часть проекта GenBench.
 
 [NIPS 2024] GenBench: A Comprehensive Benchmark of genomic foundation models
 <p align="center" width="100%">

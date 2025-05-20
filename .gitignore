@@ -60,5 +60,4 @@ coverage.xml
 *.cover
 
 # Project specific
-data/
-hyena-dna/ 
+data/ 

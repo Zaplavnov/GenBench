@@ -59,5 +59,24 @@ nosetests.xml
 coverage.xml
 *.cover
 
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.*.swp
+
+# Model weights and large binary files
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.h5
+*.hdf5
+*.pb
+
 # Project specific
-data/ 
+data/
+# Uncomment below if you want to use DVC for data versioning
+# !data/.gitkeep
+# !data/*.dvc 

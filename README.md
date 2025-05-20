@@ -30,13 +30,55 @@ GenBench is a comprehensive benchmark for evaluating genomic foundation model, e
 <details open>
 <summary>Code Structures</summary>
 
-- `GenBench/configs` contains configuration for benchmark evaluation.
-- `GenBench/data` contains datasets.
-- `GenBench/notebook` contains analysis and visualization notebooks.
-- `GenBench/src` contains source code for evaluation piplines.
-- `GenBench/weight` contains pretrained weights for benchmark evaluation.
-- `GenBench/experiment` contains scripts for experiment management.
+- `GenBench/configs/` - Конфигурационные файлы для бенчмарка и моделей:
+  - `callbacks/` - Конфигурации обратных вызовов для тренировки
+  - `dataset/` - Конфигурации для различных геномных датасетов
+  - `experiment/` - Конфигурации для конкретных экспериментов
+  - `model/` - Конфигурации моделей и слоев
+  - `pipeline/` - Конфигурации обучающих пайплайнов
+  - `scheduler/` - Конфигурации оптимизаторов и планировщиков скорости обучения
+  - `task/` - Конфигурации для различных задач геномной биоинформатики
+  - `trainer/` - Общие настройки тренировочных процессов
 
+- `GenBench/data/` - Директория для данных и датасетов:
+  - Включает промоторы, последовательности ChIP-seq и другие геномные данные
+  - Файлы должны быть загружены или сгенерированы перед запуском экспериментов
+
+- `GenBench/notebook/` - Jupyter-ноутбуки для анализа и визуализации:
+  - Ноутбуки для визуализации результатов (структура генома, активность энхансеров)
+  - Ноутбуки для анализа производительности и сравнения моделей
+  - Ноутбуки для обработки данных и кластеризации
+
+- `GenBench/src/` - Исходный код основного функционала:
+  - `callbacks/` - Имплементации колбэков для тренировки
+  - `dataloaders/` - Загрузчики данных для разных форматов геномных данных
+  - `models/` - Имплементации моделей и архитектур (HyenaDNA, DNABERT, и др.)
+  - `ops/` - Низкоуровневые операции для эффективных вычислений
+  - `tasks/` - Реализации задач и метрик оценки
+  - `utils/` - Вспомогательные функции и утилиты
+
+- `GenBench/hyena_dna/` - Модуль HyenaDNA для работы с ДНК-последовательностями:
+  - Реализация архитектуры HyenaDNA
+  - Специализированные функции для ДНК-анализа
+
+- `GenBench/weight/` - Веса предобученных моделей (доступны после загрузки)
+
+- `GenBench/experiment/` - Скрипты для управления экспериментами:
+  - Скрипты для различных задач (предсказание промоторов, сплайсинг и др.)
+  - `.sh` файлы для запуска экспериментов с разными моделями
+
+- `GenBench/docs/` - Документация по проекту
+
+- `GenBench/examples/` - Примеры запуска и использования моделей
+
+- `GenBench/scripts/` - Вспомогательные скрипты для подготовки данных
+
+- Корневые файлы:
+  - `download_models.py` - Скрипт для загрузки предобученных моделей
+  - `interpret.py` и `interpret_hyenadna_captum.py` - Инструменты для интерпретации моделей
+  - `setup.py` и `environment.yml` - Файлы для установки и настройки окружения
+  - `train.py` - Основной скрипт для запуска тренировки моделей
+  - `visualize_results.py` - Скрипт для визуализации результатов экспериментов
 
 </details>
 
